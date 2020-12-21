@@ -1,0 +1,43 @@
+{
+  "name": "ccf-all-tools",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prettier": "prettier --write src/**/*.{js,jsx,tsx,ts,less,md,json}",
+    "eslint": "eslint --ext .js,.jsx src",
+    "i": "npm install &&  cd ./demo && npm install",
+    "install": "npm install &&  cd ./demo && npm install",
+    "bootstrap": "lerna bootstrap"
+  },
+  "author": "zzt",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.2.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-plugin-import": "^2.21.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.20.0",
+    "eslint-plugin-react-hooks": "^4.0.4",
+    "husky": "^4.2.5",
+    "lerna": "^3.22.1",
+    "lint-staged": "^10.2.7",
+    "pre-commit": "^1.2.2",
+    "prettier": "^1.19.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": [
+        "lint-staged"
+      ]
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx}": [
+      "prettier --write",
+      "eslint --ext .js,.jsx,.ts,.tsx"
+    ]
+  }
+}

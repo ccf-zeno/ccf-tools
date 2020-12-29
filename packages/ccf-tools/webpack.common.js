@@ -1,39 +1,39 @@
 const path = require('path');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin'); // 清理dist的工具
 const MiniCssExtractPlugin = require('mini-css-extract-plugin'); // 分离css的工具
-const nodeExternals = require('webpack-node-externals'); // 把依赖全部都排除不打包的工具
-
-// cssloader配置
-const cssLoaderConfig = {
-  loader: 'css-loader',
-  options: {
-    modules: {
-      localIdentName: 'ccf-tools-[path][name][local]-[hash:base64:4]', // 模块内部css重新命名
-    }, // 模块化
-  },
-};
 
 module.exports = {
   entry: {
     index: './src/index.js',
   },
   output: {
-    filename: '[name].[contenthash].js',
+    filename: '[name].js',
     path: path.resolve(__dirname, 'dist'),
-    chunkFilename: '[name]-[chunkhash].js',
     libraryTarget: 'umd',
   },
   module: {
     rules: [
       {
         test: /\.css$/i,
-        use: [MiniCssExtractPlugin.loader, cssLoaderConfig],
+        use: [
+          MiniCssExtractPlugin.loader,
+          {
+            loader: 'css-loader',
+          },
+        ],
       },
       {
         test: /\.less$/i,
         use: [
           MiniCssExtractPlugin.loader,
-          cssLoaderConfig,
+          {
+            loader: 'css-loader',
+            options: {
+              modules: {
+                localIdentName: 'ccf-tools-[local]', // 模块内部css重新命名
+              }, // 模块化
+            },
+          },
           {
             loader: 'less-loader',
           },
@@ -58,28 +58,19 @@ module.exports = {
       },
     ],
   },
-  plugins: [
-    new CleanWebpackPlugin(),
-    new MiniCssExtractPlugin(),
-  ],
-  externals: [nodeExternals()],
+  plugins: [new CleanWebpackPlugin(), new MiniCssExtractPlugin()],
+  externals: {
+    antd: 'antd',
+    react: 'react',
+    reactDom: 'react-dom',
+  },
   resolve: {
     // 解析
     alias: {
       // 别名
       '@src': path.resolve(__dirname, 'src'),
     },
-  },
-  optimization: {
-    splitChunks: {
-      cacheGroups: {
-        vendor: {
-          test: /[\\/]node_modules[\\/]/,
-          name: 'librarys',
-          chunks: 'all', // 把第三方库拆离出去
-        },
-      },
-    },
-    runtimeChunk: 'single',
+    extensions: ['.js', '.jsx'],
+    mainFiles: ['index'],
   },
 };

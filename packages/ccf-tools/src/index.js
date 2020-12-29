@@ -1,3 +1,2 @@
+export { default as Demo } from './components/Demo';
 
-console.log('1');
-console.log('2');

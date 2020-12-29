@@ -13,3 +13,6 @@ node_modules
 # 环境
 .umi
 .umi-production
+
+# 打包目录
+dist

@@ -1,18 +1,13 @@
 import React, { Component } from 'react';
 import { Input } from 'antd';
-import { Demo } from 'ccf-tools';
-import 'ccf-tools/dist/index.css';
+import styles from './index.less';
+// import 'antd/dist/antd.css';
 
 export default class index extends Component {
-  changeState = (obj, callback = () => {}) => {
-    this.setState(obj, callback);
-  };
-
   render() {
     return (
-      <div>
+      <div className={styles.box}>
         <Input />
-        <Demo />
       </div>
     );
   }

@@ -2,7 +2,7 @@
   "name": "ccf-tools",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "build": "webpack --config webpack.prod.js",
     "watch": "webpack --watch --config webpack.dev.js"
@@ -24,10 +24,10 @@
     "style-loader": "^2.0.0",
     "webpack": "^5.10.0",
     "webpack-cli": "^4.2.0",
-    "webpack-merge": "^5.7.3",
-    "webpack-node-externals": "^2.5.2"
+    "webpack-merge": "^5.7.3"
   },
   "dependencies": {
+    "antd": "^4.9.4",
     "lodash": "^4.17.20",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"

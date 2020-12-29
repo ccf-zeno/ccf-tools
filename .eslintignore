@@ -2,3 +2,6 @@ src/pages/.umi/
 src/services
 src/components
 src/utils/utils
+webpack.common.js
+webpack.dev.js
+webpack.prod.js

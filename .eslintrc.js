@@ -3,11 +3,7 @@ module.exports = {
     browser: true,
     es2020: true,
   },
-  extends: [
-    'eslint:recommended',
-    'plugin:react/recommended',
-    'airbnb',
-  ],
+  extends: ['eslint:recommended', 'plugin:react/recommended', 'airbnb'],
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
@@ -15,16 +11,15 @@ module.exports = {
     ecmaVersion: 11,
     sourceType: 'module',
   },
-  plugins: [
-    'react',
-    'prettier',
-  ],
+  plugins: ['react'],
   parser: 'babel-eslint',
   rules: {
     'linebreak-style': 0,
     'no-restricted-syntax': 0,
     'keyword-spacing': 0,
     'no-console': 0,
-    'prettier/prettier': 'error',
+    'no-use-before-define': ['error', { functions: false, classes: true }],
+    'no-param-reassign': 0,
+    'arrow-parens': [0, 'always'],
   },
 };

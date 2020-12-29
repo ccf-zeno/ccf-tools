@@ -5,8 +5,8 @@ import '../global.js';
 import { plugin } from './core/plugin';
 import './core/pluginRegister';
 import { createHistory } from './core/history';
-import { ApplyPluginsType } from 'C:/USE/code3/ccf-tools/demo/node_modules/@umijs/runtime';
-import { renderClient } from 'C:/USE/code3/ccf-tools/demo/node_modules/@umijs/renderer-react/dist/index.js';
+import { ApplyPluginsType } from 'C:/USE/code3/ccf-all-tools/demo/node_modules/@umijs/runtime';
+import { renderClient } from 'C:/USE/code3/ccf-all-tools/demo/node_modules/@umijs/renderer-react/dist/index.js';
 import { getRoutes } from './core/routes';
 
 

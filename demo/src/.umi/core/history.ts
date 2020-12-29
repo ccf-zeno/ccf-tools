@@ -1,5 +1,5 @@
 // @ts-nocheck
-import { createBrowserHistory } from 'C:/USE/code3/ccf-tools/demo/node_modules/@umijs/runtime';
+import { createBrowserHistory } from 'C:/USE/code3/ccf-all-tools/demo/node_modules/@umijs/runtime';
 
 let options = {
   "basename": "/"

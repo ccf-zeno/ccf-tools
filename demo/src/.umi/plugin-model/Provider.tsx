@@ -1,13 +1,13 @@
 // @ts-nocheck
 import React from 'react';
-import initialState from 'C:/USE/code3/ccf-tools/demo/src/.umi/plugin-initial-state/models/initialState';
+import initialState from 'C:/USE/code3/ccf-all-tools/demo/src/.umi/plugin-initial-state/models/initialState';
 
 // @ts-ignore
-import Dispatcher from 'C:/USE/code3/ccf-tools/demo/node_modules/@umijs/plugin-model/lib/helpers/dispatcher';
+import Dispatcher from 'C:/USE/code3/ccf-all-tools/demo/node_modules/@umijs/plugin-model/lib/helpers/dispatcher';
 // @ts-ignore
-import Executor from 'C:/USE/code3/ccf-tools/demo/node_modules/@umijs/plugin-model/lib/helpers/executor';
+import Executor from 'C:/USE/code3/ccf-all-tools/demo/node_modules/@umijs/plugin-model/lib/helpers/executor';
 // @ts-ignore
-import { UmiContext } from 'C:/USE/code3/ccf-tools/demo/node_modules/@umijs/plugin-model/lib/helpers/constant';
+import { UmiContext } from 'C:/USE/code3/ccf-all-tools/demo/node_modules/@umijs/plugin-model/lib/helpers/constant';
 
 export const models = { '@@initialState': initialState,  };
 

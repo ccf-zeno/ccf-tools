@@ -9,3 +9,7 @@ node_modules
 /yarn-error.log
 /yarn.lock
 /package-lock.json
+
+# 环境
+.umi
+.umi-production

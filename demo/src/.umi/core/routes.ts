@@ -1,6 +1,6 @@
 // @ts-nocheck
 import React from 'react';
-import { ApplyPluginsType } from 'C:/USE/code3/ccf-tools/demo/node_modules/@umijs/runtime';
+import { ApplyPluginsType } from 'C:/USE/code3/ccf-all-tools/demo/node_modules/@umijs/runtime';
 import * as umiExports from './umiExports';
 import { plugin } from './plugin';
 

@@ -3,5 +3,8 @@
     "packages/*",
     "demo"
   ],
-  "version": "independent"
+  "version": "independent",
+  "publish": {
+    "registry": "https://registry.npmjs.org"
+  }
 }

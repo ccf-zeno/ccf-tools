@@ -1,9 +1,8 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import { Input } from 'antd';
 import styles from './index.less';
-// import 'antd/dist/antd.css';
 
-export default class index extends Component {
+export default class index extends PureComponent {
   render() {
     return (
       <div className={styles.box}>

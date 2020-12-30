@@ -21,5 +21,7 @@ module.exports = {
     'no-use-before-define': ['error', { functions: false, classes: true }],
     'no-param-reassign': 0,
     'arrow-parens': [0, 'always'],
+    'react/jsx-props-no-spreading': 0,
+    'react/forbid-prop-types': 0,
   },
 };

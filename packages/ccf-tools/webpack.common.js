@@ -49,6 +49,7 @@ module.exports = {
               ['@babel/preset-env', { targets: 'defaults' }], // 对浏览器环境进行语法转义,兼容低版本浏览器
               ['@babel/preset-react'], // 对react语法进行转义
             ],
+            plugins: [['import', { libraryName: 'antd', style: 'css' }]],
           },
         },
       },

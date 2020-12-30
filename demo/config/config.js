@@ -25,5 +25,4 @@ export default defineConfig({
     '@assets': path.resolve(rootdir, 'src/assets'),
     '@services': path.resolve(rootdir, 'src/services'),
   },
-  plugins: [['import', { libraryName: 'antd', style: 'css' }]],
 });

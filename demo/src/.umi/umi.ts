@@ -38,7 +38,7 @@ export default clientRender();
 
 
     window.g_umi = {
-      version: '3.3.1',
+      version: '3.3.3',
     };
   
 

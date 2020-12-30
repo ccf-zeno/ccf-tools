@@ -1,6 +1,7 @@
 /* eslint-disable react/prefer-stateless-function */
 import React, { Component } from 'react';
 import { Tooltip } from 'ccf-tools';
+import { checkEmail } from 'ccf-funcs';
 import 'ccf-tools/dist/index.css';
 import styles from './index.less';
 

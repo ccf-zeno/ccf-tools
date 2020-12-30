@@ -8,11 +8,11 @@ node_modules
 npm-debug.log
 yarn-error.log
 yarn.lock
-package-lock.json
+lerna-debug.log
 
 # 环境
 .umi
 .umi-production
 
 # 打包目录
-dist/
+dist

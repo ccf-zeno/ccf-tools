@@ -5,14 +5,14 @@
 
 # 依赖
 node_modules
-/npm-debug.log*
-/yarn-error.log
-/yarn.lock
-/package-lock.json
+npm-debug.log
+yarn-error.log
+yarn.lock
+package-lock.json
 
 # 环境
 .umi
 .umi-production
 
 # 打包目录
-dist
+dist/

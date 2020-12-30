@@ -6,8 +6,6 @@
   "scripts": {
     "prettier": "prettier --write src/**/*.{js,jsx,tsx,ts,less,md,json}",
     "eslint": "eslint --ext .js,.jsx src",
-    "i": "npm install &&  cd ./demo && npm install",
-    "install": "npm install &&  cd ./demo && npm install",
     "bootstrap": "lerna bootstrap"
   },
   "author": "zzt",

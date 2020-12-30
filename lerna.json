@@ -4,7 +4,5 @@
     "demo"
   ],
   "version": "independent",
-  "publish": {
-    "registry": "https://registry.npmjs.org"
-  }
+  "gitTagVersion": false
 }

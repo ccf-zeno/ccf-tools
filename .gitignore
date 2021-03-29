@@ -9,6 +9,7 @@ npm-debug.log
 yarn-error.log
 yarn.lock
 lerna-debug.log
+package-lock.json
 
 # 环境
 .umi

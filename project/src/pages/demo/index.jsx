@@ -15,7 +15,7 @@ export default class index extends Component {
   render() {
     return (
       <div>
-        this is demo1
+        asdsda
         <Demo />
         this is demo2
         <Button onClick={this.onClick}>点我</Button>

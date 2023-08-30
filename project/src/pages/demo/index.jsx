@@ -17,6 +17,7 @@ export default class index extends Component {
       <div>
         this is demo1
         <Demo />
+        this is demo2
         <Button onClick={this.onClick}>点我</Button>
       </div>
     );
